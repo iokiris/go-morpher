@@ -70,7 +70,7 @@
 ```bash
 git clone https://github.com/your-username/gomorpher.git
 cd gomorpher
-go run main.go
+go run cmd/sever/main.go 
 ```
 
 Visit: `http://localhost:8080/swagger/index.html` (if Swagger is set up)
@@ -106,13 +106,7 @@ gomorpher/
 │    └── templates
 │        └── style.scss.tmpl
 ├── README.md
-├── tmp
-│    ├── build-errors.log
-│    └── main
-└── web
-    ├── index.html
-    └── script.js
-
+└── tmp 
 ```
 
 ---
