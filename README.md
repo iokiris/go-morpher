@@ -83,33 +83,33 @@ Visit: `http://localhost:8080/swagger/index.html` (if Swagger is set up)
 ```
 gomorpher/
 ├── cmd
-│         └── server
-│             └── main.go
+│    └── server
+│        └── main.go
 ├── docs
-│         ├── docs.go
-│         ├── swagger.json
-│         └── swagger.yaml
+│    ├── docs.go
+│    ├── swagger.json
+│    └── swagger.yaml
 ├── go.mod
 ├── go.sum
 ├── internal
-│         ├── api
-│         │         └── handler.go
-│         ├── engine
-│         │         ├── core.go
-│         │         ├── helpers.go
-│         │         └── timing
-│         │             └── easing.go
-│         ├── exporter
-│         │         ├── advanced_exporter.go
-│         │         └── scss.go
-│         ├── models
-│         │         └── request.go
-│         └── templates
-│             └── style.scss.tmpl
+│    ├── api
+│    │    └── handler.go
+│    ├── engine
+│    │    ├── core.go
+│    │    ├── helpers.go
+│    │    └── timing
+│    │        └── easing.go
+│    ├── exporter
+│    │    ├── advanced_exporter.go
+│    │    └── scss.go
+│    ├── models
+│    │    └── request.go
+│    └── templates
+│        └── style.scss.tmpl
 ├── README.md
 ├── tmp
-│         ├── build-errors.log
-│         └── main
+│    ├── build-errors.log
+│    └── main
 └── web
     ├── index.html
     └── script.js
