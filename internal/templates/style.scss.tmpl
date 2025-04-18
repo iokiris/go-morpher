@@ -1,0 +1,30 @@
+/* SCSS Animation for selector .{{.Selector}} */
+
+{{"$"}}{{.Selector}}-duration: {{printf "%.2f" .Duration}}s;
+{{"$"}}{{.Selector}}-easing: {{.Easing}};
+{{"$"}}{{.Selector}}-iterations: {{if eq .Iterations 0}}infinite{{else}}{{.Iterations}}{{end}};
+
+@mixin {{.Selector}}-animation() {
+  @keyframes {{.Selector}}-morph {
+{{- range .Frames}}
+    {{printf "%.2f" .Percent}}% {
+      d: {{.Path}};
+      border-radius: {{.Radius}};
+      background: {{.Color}};
+      {{- if .Filter}}
+      filter: {{.Filter}};
+      {{- end}}
+      transform: {{.Transform}};
+    }
+{{- end}}
+  }
+
+  animation: {{.Selector}}-morph
+             {{"$"}}{{.Selector}}-duration
+             {{"$"}}{{.Selector}}-easing
+             {{"$"}}{{.Selector}}-iterations;
+}
+
+.{{.Selector}} {
+  @include {{.Selector}}-animation();
+}
