@@ -38,10 +38,9 @@
 ```
 
 **Response:**
-```json
-{
-  "scss": "... $morphing-circle-duration: 4.20s;..."
-}
+```scss
+... $morphing-circle-duration: 4.20s; ...
+
 ```
 
 ---
